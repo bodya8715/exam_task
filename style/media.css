@@ -34,6 +34,16 @@
         max-width: 500px;
     }
 
+    .about_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about_button:first-child {
+        margin: 0px 0px 17px 0px;
+    }
+    
+
     .app_description_content_wrapper_top {
         margin-left: 50px;
     }
@@ -57,6 +67,62 @@
     }
 }
 
+@media screen and (max-width: 411px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 391px;
+    }
+
+    .header {
+        padding: 17px 16px 44px 25px;
+    }
+
+    .header_image {
+        width: 104px;
+        height: 52px;
+    }
+
+    .about_content {
+        background: none;
+        padding-top: 50px;
+    }
+
+    .about_text {
+        line-height: 24px;
+        color: #737373;
+    }
+
+    .about_title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        color: #252B42;
+    }
+
+    .about_description {
+        font-size: 24px;
+        color: #737373;
+    }
+
+    .about_buttons {
+        margin-top: 50px;
+    }
+
+    .about_button {
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    .about_button:last-child {
+        border: 1px solid #FA4A0C;
+        color: #FA4A0C;
+    }
+
+}
+
 @media screen and (max-width: 320px) {
-    
+
 }

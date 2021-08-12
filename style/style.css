@@ -128,7 +128,7 @@ body {
 .app_description::before {
     content: "";
     position: absolute;
-    width: 884px;
+    width: 52%;
     height: 3px;
     top: 0;
     left: 50%;
