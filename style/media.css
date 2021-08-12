@@ -61,10 +61,10 @@
         justify-content: center;
     }
 
-    .footer_link,
+    /* .footer_link,
     .footer_text {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 411px) {
@@ -88,6 +88,8 @@
     .about_content {
         background: none;
         padding-top: 50px;
+        padding-bottom: 22px;
+        min-height: auto;
     }
 
     .about_text {
@@ -107,6 +109,11 @@
         color: #737373;
     }
 
+    .about_pictures_img {
+        max-width: 380px;
+        bottom: 136px;
+    }
+
     .about_buttons {
         margin-top: 50px;
     }
@@ -121,6 +128,94 @@
         color: #FA4A0C;
     }
 
+    .app_description {
+        padding-top: 0;
+        padding-bottom: 93px;
+    }
+
+    .app_description_title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        padding-bottom: 50px;
+        margin-bottom: 65px;
+    }
+
+    .app_description::before {
+        top: 85px;
+        width: 100%;
+    }
+
+    .app_description_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app_description_img_wrapper_top {
+        order: 1;
+    }
+
+    .app_description_content_wrapper_top {
+        order: 0;
+        margin-left: 0;
+    }
+    .app_description_content_wrapper_bottom {
+        margin-right: 0;
+    }
+
+    .app_description_img_wrapper_top,
+    .app_description_img_wrapper_bottom {
+        width: 317px;
+    }
+
+    .app_description_text {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .app_description_instruction {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .app_description_details {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    .app_description_flex + .app_description_flex {
+        margin-top: 90px;
+    }
+
+    .download {
+        background: #252B42;
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+
+    .download_title {
+        width: 310px;
+    }
+
+    .download_text {
+        font-size: 24px;
+        width: 245px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 45px 0;
+    }
+
+    .footer_social {
+        margin-bottom: 8px;
+    }
+
+    .footer_link {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
