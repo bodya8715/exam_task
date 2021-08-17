@@ -1,0 +1,159 @@
+.about_container {
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.about_content {
+    background-image: url(../img/about_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 619px;
+    padding-top: 73px;
+    padding-bottom: 146px;
+    position: relative;
+    text-align: center;
+}
+
+.about_text {
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+}
+
+.about_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 17px auto 0 auto;
+}
+
+.about_description {
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #F7F7F7;
+    margin: 17px auto 0 auto;
+}
+
+.about_buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+}
+
+.about_button {
+    display: block;
+    border-radius: 30px;
+    text-align: center;
+    width: 236px;
+    color: #FFFFFF;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    padding: 16px;
+}
+
+.about_button:first-child {
+    background: var(--orangeColor);
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+    margin-right: 34px;
+}
+
+.about_button:last-child {
+    border: 1px solid #FFFFFF;
+}
+
+.about_pictures_wrapper {
+    position: relative;
+    padding-bottom: 128px;
+}
+
+.about_pictures_img {
+    width: 41%;
+    margin:-110px auto 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    .about_pictures_img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_pictures_img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about_pictures_img {
+        width: 70%;
+    }
+
+    .about_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_button:first-child {
+        margin: 0 0 17px 0;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .about_content {
+        background: none;
+        padding-top: 50px;
+        padding-bottom: 22px;
+        min-height: auto;
+    }
+
+    .about_text {
+        line-height: 24px;
+        color: #737373;
+    }
+
+    .about_title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        color: #252B42;
+    }
+
+    .about_pictures_wrapper {
+        padding-bottom: 116px;
+    }
+    
+    .about_pictures_img {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about_description {
+        font-size: 24px;
+        color: #737373;
+    }
+
+    .about_buttons {
+        margin-top: 50px;
+    }
+
+    .about_button {
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    .about_button:last-child {
+        border: 1px solid #FA4A0C;
+        color: #FA4A0C;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about_pictures_img {
+        width: 85%;
+    }
+}
