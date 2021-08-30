@@ -41,7 +41,6 @@
     margin-top: 131px;
 }
 
-.app_description_img_wrapper,
 .app_description_img_wrapper {
     flex: 0 1 302px;
 }
@@ -51,16 +50,20 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.35));
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.2));
 }
 
-.app_description_content_wrapper,
-.app_description_content_wrapper {
-    flex: 0 1 568px;
+.app_description_content_wrapper_top,
+.app_description_content_wrapper_bottom {
+    flex: 0 1 568px;  
 }
 
-.app_description_content_wrapper {
+.app_description_content_wrapper_top {
     margin-left: 171px;
+}
+
+.app_description_content_wrapper_bottom {
+    margin: 0 171px 0 0;
 }
 
 .app_description_text {
@@ -90,29 +93,29 @@
     flex-direction: row-reverse;
 }
 
-.row-reverse .app_description_content_wrapper {
-    margin: 0 171px 0 0;
-}
-
 @media screen and (max-width: 768px) {
-    .app_description_content_wrapper {
+    .app_description_content_wrapper_top {
         margin-left: 50px;
     }
 
-    .row-reverse .app_description_content_wrapper {
+    .app_description_content_wrapper_bottom {
         margin: 0 50px 0 0;
     }
 }
 
 @media screen and (max-width: 576px) {
     .app_description_flex {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
-    .row .app_description_content_wrapper,
-    .row-reverse .app_description_content_wrapper  {
-        order: -1;
-        margin: 0;
+    .app_description {
+        padding-top: 0;
+        padding-bottom: 93px;
+    }
+
+    .app_description::before {
+        top: 85px;
+        width: 100%;
     }
 
     .app_description_text,
@@ -123,11 +126,6 @@
 }
 
 @media screen and (max-width: 411px) {
-    .app_description {
-        padding-top: 0;
-        padding-bottom: 93px;
-    }
-
     .app_description_title {
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
@@ -135,19 +133,10 @@
         margin-bottom: 65px;
     }
 
-    .app_description::before {
-        top: 85px;
-        width: 100%;
-    }
-
-    .app_description_img_wrapper_top {
-        order: 1;
-    }
-
     .app_description_content_wrapper_top {
-        order: 0;
         margin-left: 0;
     }
+    
     .app_description_content_wrapper_bottom {
         margin-right: 0;
     }

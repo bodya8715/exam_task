@@ -1,9 +1,16 @@
 .header {
-    padding: 26px 0 28px 0;
+    padding: 26px 0;
+}
+
+.header_link_wrapper {
+    height: 102px;
+    width: 246px;
 }
 
 .header_link {
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .header_image {
@@ -27,19 +34,15 @@
 
 .header_burger {
     border: none;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        padding: 17px 0 44px 0;
-    }
     .header_container {
         padding: 0 16px 0 25px;
     }
-}
-
-@media screen and (max-width: 411px) {
-    .header_link {
+    
+    .header_link_wrapper {
         width: 104px;
         height: 52px;
     }
